@@ -4,7 +4,11 @@
   "description": "menu for restaurants",
   "main": "script.js",
   "scripts": {
+    "build":"npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    
   },
   "repository": {
     "type": "git",
