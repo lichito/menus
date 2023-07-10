@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página web con cinta de categorías</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+    <nav>
+      
+        <a class="active" href="#seccion1">Tipicos</a>
+        <a href="#seccion2">Pupusas</a>
+        <a href="#seccion3">Tacos</a>
+        <a href="#seccion4">Carnes</a>      
+      
+    </nav>
+</header>
+  
+    <section id="seccion1">
+      <!-- Contenido de la sección 1 -->
+      <div class="card">
+        <img src="/img/nuegados.jpeg" alt="Producto" />
+        <div class="product-details">
+          <h3 class="product-name">Nuegados de Yuca</h3>
+          <p class="product-price">$1.35</p>
+          <p class="product-description">Deliciosos y tradicionales nuegados de yuca de la casa
+             </p>
+        </div>
+        <button class="add-to-cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Agregar al carrito</span>
+        </button>
+      </div>
+
+      <div class="card">
+        <img src="/img/empanadas.png" alt="Producto" />
+        <div class="product-details">
+          <h3 class="product-name">Orden de Empanadas</h3>
+          <p class="product-price">$1.35</p>
+          <p class="product-description">Porcion de empanadas de frijol o leche.</p>
+        </div>
+        <button class="add-to-cart">
+            <i class="fas fa-shopping-cart"></i>
+            Add to Cart
+          </button>
+      </div>
+
+    </section>
+  
+    <section id="seccion2">
+       
+
+        <div class="card">
+            <img src="/img/fq.jpeg" alt="Producto" />
+            <div class="product-details">
+              <h3 class="product-name">Pupusas de frijol con queso</h3>
+              <p class="product-price">$0.85</p>
+              <p class="product-description">Tradicionales pupusas de frijol con queso de la casa.</p>
+            </div>
+            <button class="add-to-cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span>Agregar al carrito</span>
+            </button>
+          </div>
+
+      <!-- Contenido de la sección 2 -->
+    </section>
+  
+    <section id="seccion3">
+      <!-- Contenido de la sección 3 -->
+      <div class="card">
+        <img src="/img/tacosres.webp" alt="Producto" />
+        <div class="product-details">
+          <h3 class="product-name">Tacos de Res</h3>
+          <p class="product-price">$4.50</p>
+          <p class="product-description">Deliciosos tacos de res con su cebollita y cilantro picado deliciosos.</p>
+        </div>
+        <button class="add-to-cart">
+            <i class="fas fa-shopping-cart"></i>
+            Add to Cart
+          </button>
+      </div>
+
+    </section>
+    <section id="seccion4">
+        <!-- Contenido de la sección 3 -->
+        <p>CARNES</p>
+        <div class="card">
+          <img src="/img/carne.jpeg" alt="Producto" />
+          <div class="product-details">
+            <h3 class="product-name">Carne a la plancha</h3>
+            <p class="product-price">$7.00</p>
+            <p class="product-description">Acompanada de papas fritas y ensalada fresca.</p>
+          </div>
+          <button class="add-to-cart">
+              <i class="fas fa-shopping-cart"></i>
+              Add to Cart
+            </button>
+        </div>
+  
+      </section>
+  </body>
+  <script src="script.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBbZuo7GnWvXY2G3ORnu0DDZUkrY36HYio",
+      authDomain: "menus-533b6.firebaseapp.com",
+      databaseURL: "https://menus-533b6-default-rtdb.firebaseio.com",
+      projectId: "menus-533b6",
+      storageBucket: "menus-533b6.appspot.com",
+      messagingSenderId: "436079974074",
+      appId: "1:436079974074:web:b6942ad78bb2c757a3d483"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</html>

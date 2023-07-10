@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: darkcyan;
+    padding: 25px;
+    text-align: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 25px;
+}
+
+header nav a.active,
+header nav a:hover {
+
+    background: #fff;
+    color: darkcyan;
+
+}
+
+section {
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*font-size: 7em;
+
+font-weight: bolder;
+*/
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-transform: uppercase;
+    background: #eee;
+}
+
+/* section:nth-child(odd){
+    background: #eee;
+} */
+
+.card {
+    margin: 70px 70px 70px 70px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .product-details {
+    margin-top: 20px;
+}
+
+.card .product-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card .product-price {
+    font-size: 16px;
+    color: #888888;
+}
+
+.add-to-cart {
+    margin-top: 15px;
+    display: inline-block;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-to-cart i {
+    margin-right: 5px;
+}
